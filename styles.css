@@ -5,58 +5,145 @@ body {
 
 
 .presentation {
-    padding-left: 200px;
-    padding-top: 5px;
+padding-left: 20%;
     font-size:100px;
     font-weight:700;
+    transform: translateY(-20px);
+    animation: fadeInUp 1s ease-out forwards;
+    opacity: 0;
 }
-
+@keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+.presentation-container {
+    display: flex;
+    justify-content: flex-end;
+}
 .p_presentation {
-    padding-left: 600px;
     font-weight: 600;
     font-size: 50px;
     line-height: 1.2;
-
-    
+    flex:0.5
 }
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    transition: transform 0.2s ease-in-out;
 
+}
 
 .links {
     display:flex;
     justify-content:flex-end;
-    gap:2px;
-    a {
-        color: black;
-        text-decoration: none;
-        font-size: 20px;
-        font-weight: 300;
-        padding-right: 90px;
-        padding-top: 30px;
-        transition: font-size 230ms ease-in-out;
+    gap: 50px;
+    padding-right: 120px;
+    padding-top: 40px;
 
-    }
  
 }
 
 a:hover {
  
-    font-size:25px;
+    transform: scale(1.2);
 
-    }
+}
 
     .tk {
         border-radius: 45px;
-        width: 1500px;
+        width: 100%;
         margin-top: 100px;
           
 
 
-    }
-    
-    .middle_page {
-        display:flex;
-        justify-content:center;
-
+}
 
     
-    }
+.middle_page {
+    display:flex;
+    justify-content:center;
+}
+
+.a_propos_de_moi {
+    display:flex;
+    justify-content:center;
+    font-weight: 600;
+    font-size: 80px;
+}
+
+.background_color_all {
+    gap: 20px;
+    display: grid;
+    flex-wrap: wrap;
+    padding-right: 10%;
+    padding-left: 10%;
+
+}
+
+.ligne {
+    display:flex;
+    justify-content:center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.de_moi_base {
+    font-size:300%;
+    font-weight: 600;
+    border-radius: 45px;
+    padding:40px 40px 40px 40px;
+}
+
+
+.de_moi {
+    background-color: rgb(177, 300, 789);
+    flex: 2;
+}
+
+
+.de_moi2 {
+    background-color: rgb(119, 241, 103);
+    flex: 3;
+}
+
+.de_moi3 {
+    background-color: rgb(177, 241, 103);
+    flex: 2;
+}
+
+.de_moi4 {
+    background-color: rgb(103, 188, 241);
+    flex: 1;
+}
+
+
+.de_moi5 {
+    background-color: rgb(241, 229, 103);
+    flex: 3;
+}
+
+.de_moi6 {
+    background-color: rgb(241, 165, 103);
+    flex: 4;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.right {
+    display: flex;
+    gap: 20px;
+}
