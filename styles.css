@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,600;0,700;1,500&display=swap');
 body {
     font-family: 'Inter Tight', sans-serif;
+    margin:0;
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
 
 .presentation {
-padding-left: 20%;
     font-size:100px;
     font-weight:700;
     transform: translateY(-20px);
     animation: fadeInUp 1s ease-out forwards;
     opacity: 0;
+    flex:0.8;
 }
 @keyframes fadeInUp {
     to {
@@ -38,20 +41,55 @@ a {
 
 }
 
-.links {
-    display:flex;
-    justify-content:flex-end;
-    gap: 50px;
-    padding-right: 120px;
-    padding-top: 40px;
-
- 
+.head {
+    display: flex;
+   justify-content: space-between;
+    
+    font-family: inter;
+    font-weight: 800;
+    font-size: 40px;
+    border-radius: 15px;
+    padding: 30px;
+    
 }
 
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+ 
+}
+ a:hover {
+    font-size: 25px;
+
+    
+}
+
+
+.pictures {
+    padding-left: 40px;
+
+}
+ .accueil {
+    justify-content: center;
+ }
+
+ .random {
+
+    padding-right: 40px;
+ }
+#title {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-family: inter;
+
+}
 a:hover {
  
     transform: scale(1.2);
-
 }
 
     .tk {
@@ -80,8 +118,6 @@ a:hover {
     gap: 20px;
     display: grid;
     flex-wrap: wrap;
-    padding-right: 10%;
-    padding-left: 10%;
 
 }
 
