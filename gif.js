@@ -23,7 +23,12 @@ const fetchMyGif = () => fetch(`https://api.giphy.com/v1/gifs/random?api_key=${K
 
 })
 
+const loading = () => {
+    gif.src = 'https://media1.tenor.com/m/UnFx-k_lSckAAAAC/amalie-steiness.gif'
+  }
+
+
 button.addEventListener('click', function() {
-    console.log("click")
+    loading()
     fetchMyGif()
 })

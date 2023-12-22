@@ -20,9 +20,12 @@ const fetchMyImage = () => fetch(`https://api.nasa.gov/planetary/apod?api_key=${
   
 })
 
-
+const loading = () => {
+  img.src = 'https://media1.tenor.com/m/UnFx-k_lSckAAAAC/amalie-steiness.gif'
+}
 
  button.addEventListener('click', function() {
+    loading()
     fetchMyImage()
 })
 

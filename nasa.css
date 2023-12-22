@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,600;0,700;1,500&display=swap');
 
+body {
+    margin:0;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
 
 .head {
     display: flex;
    justify-content: space-between;
-    
     font-family: inter;
     font-weight: 800;
     font-size: 40px;
-    border-radius: 15px;
-    padding: 30px;
-    
+    padding: 30px; 
 }
 
 a {
@@ -18,28 +21,13 @@ a {
     text-decoration: none;
     font-size: 20px;
     font-weight: 300;
-    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
- 
+    transition: transform 0.2s ease-in-out;
 }
  a:hover {
-    font-size: 25px;
-
-    
+    transform: scale(1.2); 
 }
 
 
-.pictures {
-    padding-left: 40px;
-
-}
- .accueil {
-    justify-content: center;
- }
-
- .random {
-
-    padding-right: 40px;
- }
 #title {
     display: flex;
     justify-content: center;
@@ -60,21 +48,6 @@ a {
     font-weight: 600;
     font-family: inter;
 }
-#more_info {
-    padding: 10px 40px;
-    float: left;
-    border-radius: 10px;
-    font-family: 'Inter', cursive;
-    font-size: 25px;
-    color: #ffffff;
-    text-decoration: none;
-    background-color: #6c6c6c;
-    border-bottom: 5px solid #313131;
-    text-shadow: 0px -2px  #313131;
-    transition: all 0.1s;
-    -webkit-transition: all 0.1s;
-    margin-top: 30px;  
-}
 
 #more_info:active {
     transform: translate(0px,5px);
@@ -91,15 +64,13 @@ a {
     font-size: 25px;
     color: #ffffff;
     text-decoration: none;
-    background-color: #6c6c6c;
-    border-bottom: 5px solid #313131;
-    text-shadow: 0px -2px  #313131;
+    background-color: #8cd1be;
+    border-bottom: 5px solid #000000;
+    text-shadow: 0px -2px  #8cafd1;
     transition: all 0.1s;
-    -webkit-transition: all 0.1s;
-    margin-top: 30px;
-    
-    
+    -webkit-transition: all 0.1s;   
 }
+
 #button:active {
     transform: translate(0px,5px);
     -webkit-transform: translate(0px,5px);
@@ -107,12 +78,12 @@ a {
 }
 
 
-
-
 #randomNasaImage {
     display: flex;
     justify-content: center;
     border-radius: 20px;
+    margin-top: 30px;
+
 }
 
 
@@ -121,20 +92,4 @@ a {
     justify-content: center;
     display: grid;
     align-items: start;
-    padding-top: 100px;
 }
-footer {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-    flex-wrap: wrap;
-    align-items: center;
-    padding-right: 40px;
-    padding-left: 40px;
-    font-family: inter;
-}
-.right {
-    display: flex;
-    gap: 20px;
-}
-  

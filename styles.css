@@ -2,8 +2,8 @@
 body {
     font-family: 'Inter Tight', sans-serif;
     margin:0;
-    padding-right: 10%;
-    padding-left: 10%;
+    margin-right: 10%;
+    margin-left: 10%;
 }
 
 
@@ -38,48 +38,23 @@ a {
     font-size: 20px;
     font-weight: 300;
     transition: transform 0.2s ease-in-out;
-
 }
 
 .head {
     display: flex;
    justify-content: space-between;
-    
     font-family: inter;
     font-weight: 800;
     font-size: 40px;
-    border-radius: 15px;
     padding: 30px;
     
 }
 
-a {
-    color: black;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 300;
-    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
- 
-}
- a:hover {
-    font-size: 25px;
-
-    
-}
 
 
-.pictures {
-    padding-left: 40px;
 
-}
- .accueil {
-    justify-content: center;
- }
 
- .random {
 
-    padding-right: 40px;
- }
 #title {
     display: flex;
     justify-content: center;
@@ -130,7 +105,7 @@ a:hover {
 
 
 .de_moi_base {
-    font-size:300%;
+    font-size:50px;
     font-weight: 600;
     border-radius: 45px;
     padding:40px 40px 40px 40px;
@@ -183,3 +158,22 @@ footer {
     display: flex;
     gap: 20px;
 }
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+    .presentation {
+      font-size: 80px;
+    }
+
+    .p_presentation {
+      font-size: 40px;
+    }
+    
+    .a_propos_de_moi {
+        font-size: 40px;
+    }
+
+    .de_moi_base {
+        font-size: 30px;
+    }
+  }
